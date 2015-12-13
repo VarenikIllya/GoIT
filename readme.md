@@ -1,1 +1,1 @@
-# GoIT coursec
+# GoIT cources
