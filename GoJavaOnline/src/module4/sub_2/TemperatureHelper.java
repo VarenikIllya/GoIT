@@ -5,9 +5,9 @@ package module4.sub_2;
  */
 public class TemperatureHelper {
     public static double fahrenheitToCelsius(double tempInFahrenheit){
-        return tempInFahrenheit + 273;
+        return (tempInFahrenheit - 32 ) * 1.8 ;
     }
     public static double celsiusToFahrenheit(double tempInCelsuis){
-        return tempInCelsuis - 273;
+        return (tempInCelsuis * 1.8) + 32;
     }
 }
