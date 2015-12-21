@@ -7,6 +7,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(new Rose().getName());
         System.out.println(new Aster().getName());
-        System.out.print(new Chamomile().getName());
+        System.out.println(new Chamomile().getName());
+
+
+        System.out.println(new Rosebush(0).getFullName());
+        System.out.println(new Tulip().getName());
     }
 }
