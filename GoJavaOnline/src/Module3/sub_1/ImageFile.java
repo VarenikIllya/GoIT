@@ -10,12 +10,6 @@ public class ImageFile extends File{
 
     ImageFile(String path) throws IOException{
         super(path);
-
-        s = path.substring(path.lastIndexOf('.') + 1);
-
-        if (!s.toUpperCase().equals("PNG")) {
-            throw new IOException("Provided file is not an Image PNG file");
-        }
     }
 
     @Override

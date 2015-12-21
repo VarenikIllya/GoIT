@@ -10,12 +10,6 @@ public class AudioFile extends File{
 
     AudioFile(String path) throws IOException{
         super(path);
-
-        s = path.substring(path.lastIndexOf('.') + 1);
-
-        if (!s.toUpperCase().equals("MP3")) {
-            throw new IOException("Provided file is not an Audio MP3 file");
-        }
     }
 
     @Override

@@ -10,12 +10,6 @@ public class TextFile extends File{
 
     TextFile(String path) throws IOException{
         super(path);
-
-        s = path.substring(path.lastIndexOf('.') + 1);
-
-        if (!s.toUpperCase().equals("TXT")) {
-            throw new IOException("Provided file is not a Text '*.txt' file");
-        }
     }
 
     @Override
