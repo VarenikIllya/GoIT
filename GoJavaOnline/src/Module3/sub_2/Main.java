@@ -12,5 +12,9 @@ public class Main {
 
         System.out.println(new Rosebush(0).getFullName());
         System.out.println(new Tulip().getName());
+
+        Bouquet bouquet = new Bouquet("Букет",  new Flower[]{new Rose(), new Rose(), new Rose()});
+
+        System.out.println("В букете '" + bouquet + "' " + bouquet.getFlowersCount() + " цветка");
     }
 }

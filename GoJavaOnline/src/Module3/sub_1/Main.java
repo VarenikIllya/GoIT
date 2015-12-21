@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException{
         File[] files = new File[]{new ImageFile("~\\Documents\\GoIT\\a.png"), new AudioFile("~\\Documents\\GoIT\\a.mp3"), new TextFile("~\\Documents\\GoIT\\a.txt")};
 
-        File dir = new File("~\\Documents\\GoIT\\");
+        File dir = new Directory("~\\Documents\\GoIT\\");
         if (dir.exists()) {
             for(File f : files){
                 if (f.exists()) {
