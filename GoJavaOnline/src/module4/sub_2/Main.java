@@ -5,7 +5,7 @@ package module4.sub_2;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(TemperatureHelper.CelsiusToFahrenheit(14));
-        System.out.println(TemperatureHelper.FahrenheitToCelsius(-285));
+        System.out.println(TemperatureHelper.celsiusToFahrenheit(14));
+        System.out.println(TemperatureHelper.fahrenheitToCelsius(-285));
     }
 }
