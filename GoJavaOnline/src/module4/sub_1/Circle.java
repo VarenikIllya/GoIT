@@ -10,7 +10,7 @@ public class Circle extends Figure{
         this.r = radius;
     }
 
-    public int calcSquere(){
+    public int calculateArea(){
         return (int) (Math.PI*r*r/2);
     }
 }

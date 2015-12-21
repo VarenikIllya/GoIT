@@ -9,8 +9,8 @@ public class Main {
         Figure circle = new Circle(41);
         Figure rectangle = new Rectangle(5);
 
-        System.out.println("Triangle : " + triangle.calcSquere());
-        System.out.println("Circle : " + circle.calcSquere());
-        System.out.println("Rectangle : " + rectangle.calcSquere());
+        System.out.println("Triangle : " + triangle.calculateArea());
+        System.out.println("Circle : " + circle.calculateArea());
+        System.out.println("Rectangle : " + rectangle.calculateArea());
     }
 }

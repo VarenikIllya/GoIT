@@ -12,7 +12,7 @@ public class Triangle extends Figure{
         p = a + b + c;
     }
 
-    public int calcSquere(){
+    public int calculateArea(){
         return (int)Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
 }

@@ -15,7 +15,7 @@ public class Rectangle extends Figure{
         this.b = a;
     }
 
-    public int calcSquere(){
+    public int calculateArea(){
         return a*b;
     }
 }
