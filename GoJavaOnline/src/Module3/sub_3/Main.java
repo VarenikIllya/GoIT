@@ -1,11 +1,23 @@
 package Module3.sub_3;
 
+import java.util.*;
+
 /**
  * Created by i on 21.12.15.
  */
 public class Main {
     public static void main(String[] args) {
-        MusicStore store = new MusicStore(2);
+        List<Guitar> guitars = new ArrayList<Guitar>();
+        List<Piano> pianos = new ArrayList<Piano>();
+        List<Tube> tubes = new ArrayList<Tube>();
+
+        for (int i = 1; i < 3; i++) {
+            guitars.add(new Guitar());
+            tubes.add(new Tube());
+            pianos.add(new Piano());
+        }
+
+        MusicStore store = new MusicStore(pianos, guitars, tubes);
 
         for (int i = 1; i < 4; i++)
             System.out.println(store.buyGuitar().getName());

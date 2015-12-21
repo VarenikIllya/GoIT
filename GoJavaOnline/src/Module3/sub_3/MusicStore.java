@@ -7,16 +7,14 @@ import java.util.List;
  * Created by i on 21.12.15.
  */
 public class MusicStore {
-    List<Guitar> guitarList = new ArrayList<Guitar>();
-    List<Piano> pianoList = new ArrayList<Piano>();
-    List<Tube> tubeList = new ArrayList<Tube>();
+    List<Guitar> guitarList;
+    List<Piano> pianoList;
+    List<Tube> tubeList;
 
-    MusicStore(int count){
-        for (int i = 1; i <= count; i++){
-            guitarList.add(new Guitar());
-            pianoList.add(new Piano());
-            tubeList.add(new Tube());
-        }
+    MusicStore(List<Piano> piano, List<Guitar> guitar, List<Tube> tube){
+        this.guitarList = guitar;
+        this.pianoList = piano;
+        this.tubeList = tube;
     }
 
     public Guitar buyGuitar(){
