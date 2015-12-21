@@ -12,12 +12,12 @@ public class Rosebush extends Flower {
         this.countOfRose = countOfRose>0?countOfRose:0;
     }
 
-    @Override
+
     public String getFamily() {
         return FAMILY;
     }
 
-    @Override
+
     public String getName() {
         return NAME;
     }
@@ -30,14 +30,5 @@ public class Rosebush extends Flower {
         return NAME + (countOfRose>0?", count of roses is " + countOfRose:"");
     }
 
-    @Override
-    protected void setFamily() {
-        System.out.print("Cant set Family");
-    }
-
-    @Override
-    protected void setName() {
-        System.out.print("Cant set Name");
-    }
 
 }

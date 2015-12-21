@@ -17,23 +17,11 @@ public class Piano extends MusicInstrument{
         System.out.print("Играет музыка Шопена");
     }
 
-    @Override
     public String getName() {
         return "Рояль" + (!initialMessage.equals("")?" " + initialMessage:"");
     }
 
-    @Override
     public String getType() {
         return "Клавишные";
-    }
-
-    @Override
-    protected void setName(String name) {
-        System.out.print("Oops. You can't rename Piano");
-    }
-
-    @Override
-    protected void setType(String name) {
-        System.out.print("Oops. You can't re-set type for Piano");
     }
 }
