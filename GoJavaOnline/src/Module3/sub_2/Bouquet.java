@@ -1,19 +1,21 @@
 package Module3.sub_2;
 
 
+import java.util.List;
+
 /**
  * Created by i on 21.12.15.
  */
 public class Bouquet {
-    private Flower[] flowers;
+    private List<Flower> flowers;
     private String name;
 
-    Bouquet( String name, Flower[] flowers){
+    Bouquet( String name, List<Flower> flowers){
         this.flowers = flowers;
         this.name = name;
     }
 
-    public Flower[] getFlowers() {
+    public List<Flower> getFlowers() {
         return flowers;
     }
 
@@ -26,7 +28,7 @@ public class Bouquet {
     }
 
     public int getFlowersCount() {
-        return flowers.length;
+        return flowers.size();
     }
 
     @Override
