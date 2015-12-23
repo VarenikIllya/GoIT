@@ -9,6 +9,7 @@ public abstract class Flower {
         return name;
     }
 
+    // Module6 subtask 1
     public void putOnTheGarden() throws NotSuchPlaceException{
         if (new Random().nextBoolean())
             throw new NotSuchPlaceException(this);

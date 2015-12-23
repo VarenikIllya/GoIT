@@ -17,7 +17,7 @@ public class File{
             fileBytes[i] = (byte) new Random().nextInt(256);
         }
     }
-
+    // Module6 subtask 1
     public byte[] getFileBytes(final int fromBytes, final int toBytes) throws EOFException{
         if (fromBytes > 0 && toBytes < fileBytes.length-1){
             return Arrays.copyOfRange(fileBytes, fromBytes, toBytes);
