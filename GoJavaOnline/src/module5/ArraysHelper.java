@@ -62,6 +62,9 @@ public class ArraysHelper {
         System.out.println();
     }
 
+    /**
+     * Sort via "insertion method"
+     */
     public void sortArray(){
         int element;
         for (int i = 1; i < intArray.length; i++){
