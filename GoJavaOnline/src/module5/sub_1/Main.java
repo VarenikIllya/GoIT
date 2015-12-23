@@ -1,5 +1,7 @@
 package module5.sub_1;
 
+import module5.ArraysHelper;
+
 /**
  * Created by i on 23.12.15.
  */
