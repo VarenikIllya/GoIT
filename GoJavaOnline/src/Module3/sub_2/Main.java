@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        private List<Flower> flowers = new ArrayList<Flower>();
+        List<Flower> flowers = new ArrayList<Flower>();
         System.out.println(new Rose().getName());
         System.out.println(new Aster().getName());
         System.out.println(new Chamomile().getName());
@@ -21,7 +21,7 @@ public class Main {
         System.out.println(new Rosebush(0).getFullName());
         System.out.println(new Tulip().getName());
 
-        Bouquet bouquet = new Bouquet("Букет",  flowers);
+        Bouquet bouquet = new Bouquet(flowers);
 
         System.out.println("В букете '" + bouquet + "' " + bouquet.getFlowersCount() + " цветка");
     }
