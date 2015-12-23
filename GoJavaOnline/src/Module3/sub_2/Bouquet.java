@@ -27,15 +27,12 @@ public class Bouquet {
             for(Flower f : flowers){
                 if(isOneTypeFlower){
                     isOneTypeFlower=flower.getName() == f.getName();
+                    this.name = "Букет " + f.getName();
                 } else{
                     this.name = "Букет";
                     break;
                 }
             }
-        }
-        System.out.println(flowers.get(0).getName());
-        if (isOneTypeFlower) {
-            this.name = "Букет " + flowers.get(0).getName();
         }
     }
 
