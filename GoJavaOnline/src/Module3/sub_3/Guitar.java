@@ -15,6 +15,7 @@ public class Guitar extends MusicInstrument{
         this.initialMessage = initialMessage;
     }
 
+    // Module6 subtask 2
     @Override
     void play() throws IllegalStateException {
         if (new Random().nextBoolean()){
