@@ -15,6 +15,30 @@ public class Bouquet {
         this.name = name;
     }
 
+
+    Bouquet(final List<Flower> flowers){
+        this.flowers = flowers;
+        boolean isOneTypeFlower = true;
+
+        if (flowers != null) {
+
+            Flower flower = flowers.get(0);
+
+            for(Flower f : flowers){
+                if(isOneTypeFlower){
+                    isOneTypeFlower=flower.getName() == f.getName();
+                } else{
+                    this.name = "Букет";
+                    break;
+                }
+            }
+        }
+        System.out.println(flowers.get(0).getName());
+        if (isOneTypeFlower) {
+            this.name = "Букет " + flowers.get(0).getName();
+        }
+    }
+
     public List<Flower> getFlowers() {
         return flowers;
     }
