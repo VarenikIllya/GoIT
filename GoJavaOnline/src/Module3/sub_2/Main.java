@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        private List<Flower> flowers = new ArrayList<Flower>();
+        List<Flower> flowers = new ArrayList<Flower>();
         System.out.println(new Rose().getName());
         System.out.println(new Aster().getName());
         System.out.println(new Chamomile().getName());
