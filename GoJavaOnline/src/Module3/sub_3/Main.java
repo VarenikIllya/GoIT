@@ -29,7 +29,7 @@ public class Main {
         for (int i = 1; i <= 2; i++) {
             System.out.println(store.buyTube().getName());
         }
-
+// Module6:
         System.out.println();
 
         for (int i = 1; i <= 10; i++) {

@@ -24,6 +24,8 @@ public class Main {
         Bouquet bouquet = new Bouquet(flowers);
 
         System.out.println("В букете '" + bouquet + "' " + bouquet.getFlowersCount() + " цветка");
+
+//        Module6:
         System.out.println();
 
         flowers.add(new Aster());
