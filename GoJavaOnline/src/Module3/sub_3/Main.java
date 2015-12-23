@@ -29,5 +29,15 @@ public class Main {
         for (int i = 1; i <= 2; i++) {
             System.out.println(store.buyTube().getName());
         }
+
+        System.out.println();
+
+        for (int i = 1; i <= 10; i++) {
+            try {
+                new Guitar().play();
+            } catch (IllegalStateException e){
+                System.out.println("Error: One of the cords has been broken. Repair it");
+            }
+        }
     }
 }

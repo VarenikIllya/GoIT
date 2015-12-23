@@ -24,5 +24,17 @@ public class Main {
         Bouquet bouquet = new Bouquet(flowers);
 
         System.out.println("В букете '" + bouquet + "' " + bouquet.getFlowersCount() + " цветка");
+        System.out.println();
+
+        flowers.add(new Aster());
+        flowers.add(new Chamomile());
+
+        for (Flower flower : flowers) {
+            try {
+                flower.putOnTheGarden();
+            } catch (NotSuchPlaceException e) {
+                System.out.println("Error : No such place on the garden to put '" + e.getName() + "' here");
+            }
+        }
     }
 }

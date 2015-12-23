@@ -1,8 +1,6 @@
 package Module3.sub_1;
 
-import java.io.File;
 import java.util.List;
-import java.util.logging.StreamHandler;
 
 /**
  * Created by i on 21.12.15.
