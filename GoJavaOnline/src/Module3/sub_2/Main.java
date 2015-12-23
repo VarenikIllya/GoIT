@@ -15,9 +15,8 @@ public class Main {
         System.out.println(new Aster().getName());
         System.out.println(new Chamomile().getName());
 
-        flowers.add(new Rose());
-        flowers.add(new Rose());
-        flowers.add(new Rose());
+        for (int i = 1; i <=3; i++)
+            flowers.add(new Rose());
 
         System.out.println(new Rosebush(0).getFullName());
         System.out.println(new Tulip().getName());
