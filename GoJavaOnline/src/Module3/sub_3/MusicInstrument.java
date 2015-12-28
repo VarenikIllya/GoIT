@@ -6,5 +6,5 @@ package Module3.sub_3;
 public abstract class MusicInstrument {
     private String type, name;
 
-    abstract void play();
+    abstract void play(final String trackName);
 }

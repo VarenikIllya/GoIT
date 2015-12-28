@@ -22,7 +22,7 @@ public class File{
         if (fromBytes > 0 && toBytes < fileBytes.length-1){
             return Arrays.copyOfRange(fileBytes, fromBytes, toBytes);
         } else{
-            throw new EOFException();
+            throw new IllegalArgumentException("Impossible read file bytes: from " + fromBytes + " to " + toBytes + ". Array length " + fileBytes.length);
         }
     }
 

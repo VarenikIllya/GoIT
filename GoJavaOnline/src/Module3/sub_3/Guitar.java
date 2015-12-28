@@ -17,11 +17,11 @@ public class Guitar extends MusicInstrument{
 
     // Module6 subtask 2
     @Override
-    void play() throws IllegalStateException {
+    void play(final String trackName) throws IllegalStateException {
         if (new Random().nextBoolean()){
-            System.out.println("Играет гитарная партия 'Muse - Dead inside'");
+            System.out.println("Guitar play '" + trackName + "'");
         } else{
-            throw new IllegalStateException();
+            throw new IllegalStateException("Impossible play " + trackName + ". Guitar is broken");
         }
 
     }

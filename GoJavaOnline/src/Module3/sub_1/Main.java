@@ -17,8 +17,8 @@ public class Main {
                     System.out.println(f.getName());
                     try {
                         byte[] bytes = f.getFileBytes(240, 999999);
-                    }catch (EOFException e){
-                        System.out.println("Error: Looks like invalid range for getBytes method");
+                    }catch (IllegalStateException e){
+                        e.printStackTrace();
                     }
                 } else{
                     System.out.println("File is not exists '" + f.getName() + "'");
